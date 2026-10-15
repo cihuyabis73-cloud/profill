@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Siswa - Waffa Fahril Octavianto</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #f8fafc;
+            
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.90)), url('https://i.pinimg.com/736x/a9/47/31/a947317815165f0e6036ba5374d02b45.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.75);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .glass-card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .glass-card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen relative overflow-x-hidden">
+
+   
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+   
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                Profil Siswa Waffa 
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#tentang" class="hover:text-blue-400 transition-colors">Tentang Saya</a>
+                <a href="#keahlian" class="hover:text-blue-400 transition-colors">Keahlian</a>
+                <a href="#hobi" class="hover:text-blue-400 transition-colors">Hobi</a>
+                <a href="#kontak" class="hover:text-blue-400 transition-colors">Kontak</a>
+            </nav>
+            <a href="#kontak" class="px-4 py-2 text-xs font-semibold rounded-full bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg shadow-blue-500/20">
+                Hubungi Saya
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-16">
+
+       
+        <section class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 shadow-2xl">
+            <!-- Foto Profil Bulat -->
+            <div class="relative group shrink-0">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                
+                
+                <img 
+                    src="https://i.pinimg.com/736x/52/d4/5e/52d45ec18e4b6ed3dfad4e07c8432d9c.jpg" 
+                    alt="Waffa Fahril Octavianto" 
+                    class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-slate-900 shadow-2xl"
+                    onerror="this.onerror=null; this.src='https://placehold.co/200x200/1e293b/ffffff?text=Waffa';"
+                >
+            </div>
+            <div class="text-center md:text-left space-y-4">
+                <span class="px-3 py-1 text-xs font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 rounded-full">
+                    Siswa / Pelajar
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+                    Waffa Fahril Octavianto
+                </h1>
+                <p class="text-slate-400 max-w-xl text-sm md:text-base leading-relaxed">
+                    Pelajar yang bersemangat mempelajari hal baru, memiliki minat tinggi di bidang teknologi, kreatif, serta terus berkembang untuk meraih masa depan yang cerah.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                    <a href="#kontak" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 font-medium text-sm hover:opacity-90 transition shadow-lg shadow-blue-600/30">
+                        Kontak Saya
+                    </a>
+                    <a href="#tentang" class="px-6 py-2.5 rounded-xl border border-slate-700 hover:bg-slate-800 font-medium text-sm transition">
+                        Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="tentang" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                    <i class="fa-solid fa-user text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Tentang Saya</h2>
+            </div>
+            <div class="glass-card rounded-2xl p-6 md:p-8 leading-relaxed text-slate-300">
+                <p class="mb-4">
+                    Halo! Nama saya <strong class="text-white">Waffa Fahril Octavianto</strong>. Saya adalah seorang siswa yang aktif, berdedikasi, dan memiliki rasa ingin tahu yang tinggi terhadap ilmu pengetahuan baru.
+                </p>
+                <p>
+                    Saya menikmati tantangan dalam memecahkan masalah dan selalu berusaha untuk memberikan hasil terbaik dalam setiap kegiatan sekolah maupun aktivitas mandiri. Saya percaya bahwa konsistensi dan kerja keras adalah kunci utama pencapaian impian.
+                </p>
+            </div>
+        </section>
+
+       
+        <section id="keahlian" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                    <i class="fa-solid fa-code text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Keahlian</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="glass-card glass-card-hover rounded-2xl p-6 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-slate-200">Pengembangan Web (HTML & CSS)</span>
+                        <span class="text-sm font-bold text-blue-400">80%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+               
+                <div class="glass-card glass-card-hover rounded-2xl p-6 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-slate-200">Kerja Sama Tim & Komunikasi</span>
+                        <span class="text-sm font-bold text-blue-400">85%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                
+                <div class="glass-card glass-card-hover rounded-2xl p-6 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-slate-200">Pemecahan Masalah (Problem Solving)</span>
+                        <span class="text-sm font-bold text-blue-400">75%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-2.5 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+
+              
+                <div class="glass-card glass-card-hover rounded-2xl p-6 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-slate-200">Manajemen Waktu</span>
+                        <span class="text-sm font-bold text-blue-400">90%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="hobi" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                    <i class="fa-solid fa-gamepad text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Hobi & Minat</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Hobi 1 -->
+                <div class="glass-card glass-card-hover rounded-2xl p-6 text-center space-y-3">
+                    <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-slate-100">Coding</h3>
+                    <p class="text-sm text-slate-400">Eksplorasi bahasa pemrograman dan membuat project web sederhana.</p>
+                </div>
+
+                
+                <div class="glass-card glass-card-hover rounded-2xl p-6 text-center space-y-3">
+                    <div class="w-12 h-12 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-slate-100">Membaca</h3>
+                    <p class="text-sm text-slate-400">Membaca artikel teknologi, buku pengembangan diri, dan wawasan baru.</p>
+                </div>
+
+                
+                <div class="glass-card glass-card-hover rounded-2xl p-6 text-center space-y-3">
+                    <div class="w-12 h-12 bg-sky-500/20 text-sky-400 rounded-xl flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-slate-100">Olahraga</h3>
+                    <p class="text-sm text-slate-400">Menjaga kebugaran fisik melalui olahraga bersama teman-teman.</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="kontak" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Contact Me</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Info Kontak -->
+                <div class="space-y-4">
+                    <div class="glass-card p-5 rounded-2xl flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Email</p>
+                            <p class="text-sm font-medium text-slate-200">cihuyabis73@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-green-500/10 text-green-400 rounded-xl flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">WhatsApp</p>
+                            <p class="text-sm font-medium text-slate-200">+62 882-0084-66336</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-2xl flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-pink-500/10 text-pink-400 rounded-xl flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Instagram</p>
+                            <p class="text-sm font-medium text-slate-200">@rennnn0234</p>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="glass-card p-6 rounded-2xl">
+                    <form onsubmit="event.preventDefault(); document.getElementById('msg-box').classList.remove('hidden');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Nama Lengkap</label>
+                            <input type="text" required placeholder="Masukkan nama Anda" class="w-full px-4 py-2.5 rounded-xl bg-slate-900/60 border border-slate-700 text-sm focus:outline-none focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Pesan</label>
+                            <textarea rows="3" required placeholder="Tuliskan pesan Anda..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900/60 border border-slate-700 text-sm focus:outline-none focus:border-blue-500 transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 font-semibold text-sm hover:opacity-90 transition shadow-lg shadow-blue-600/30">
+                            Kirim Pesan
+                        </button>
+                    </form>
+
+                  
+                    <div id="msg-box" class="hidden mt-4 p-3 bg-green-500/10 border border-green-500/20 text-green-400 rounded-xl text-center text-xs">
+                        Pesan berhasil terkirim!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   
+    <footer class="text-center py-6 border-t border-slate-800 text-slate-500 text-xs">
+        <p>&copy; 2026 Waffa Fahril Octavianto. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
